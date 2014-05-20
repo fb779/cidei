@@ -1,0 +1,60 @@
+/* Style general Body page */
+body{
+	width: 960px;
+	margin: 15px; auto;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+}
+
+p{
+	margin: 0 0 20px 0;
+}
+
+p, li {
+	line-height: 20px;
+}
+/* END Style Body page*/
+
+/* Start: header-style*/
+header#page-header {
+	width: 100%;
+}
+
+header#page-header nav ul, footer#page-footer nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+header#page-header nav ul li, footer#page-footer nav ul li{
+	margin: 0;
+	padding: 0 20px 0 0;
+	display: inline;
+}
+
+/*Start: posts-style*/
+section#posts{
+	float: left;
+	width: 74%;
+}
+
+section#posts aside {
+	float: right;
+	width: 35%;
+	margin-left: 5%;
+	font-size: 0.5em;
+	line-height: 40%;
+}
+
+
+/*Start: sidebard-style*/
+section#sidebar {
+	float: right;
+	width: 25%;
+}
+
+
+/*Start: footer-style*/
+footer#page-footer {
+	clear: both;
+	width: 100%;
+}
