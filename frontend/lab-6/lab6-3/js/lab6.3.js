@@ -29,7 +29,8 @@ $(document).ready(function(){
 				age = parseInt(data);
 				if (age<18 || age>99){
 					$('.error').show();
-					$('.error').show().text("Edad invalida, debe ser mayo de 18 años o menor de 99");
+					//$('.error').show().text("Edad invalida, debe ser mayo de 18 años o menor de 99");
+					$('.error').html("<strong>Edad invalida, debe ser mayo de 18 años o menor de 99</strong>");
 					event.preventDefault();
 				}
 			}
