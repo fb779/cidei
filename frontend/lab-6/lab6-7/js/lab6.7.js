@@ -31,15 +31,17 @@ $(document).ready(function(){
 		}
 	});
 
-	$('.verPassword').blur(function(){
-		var data = $('.verPassword').val();
+	$('.verPass').blur(function(){
+		var data = $('.verPass').val();
 		var len = data.length;
-
-		if ($('password').val() !== $('verPassword').val()){
-			$('.verPassword').next().show().text("Si cuadran");
-		}else{
-			$('.verPassword').next().hide().text("No cuadran");
-			}
+		if (len < 1){
+			$('.verPass').next().show().text("La Clave no puede estar Vacia");
+		}else /*if ($('password').val() !== $('verPass').val()){
+				$('.verPass').next().show().text("Si cuadran");
+			}else{
+				$('.verPass').next().hide().text("No cuadran");
+				}*/
+		}
 		//event.preventDefault();
 	});
 

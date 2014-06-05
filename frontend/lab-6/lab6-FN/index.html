@@ -39,21 +39,22 @@
         <span class="error"></span>
       </div>
 
-      <div>
+      <div id="checkFood">
         <span class="label">Selecciona tus Productos:</span></br>
         <input type="checkbox" id="Pizza" name="pizza" value=5000 class="food" />Pizza $5000 </br>
         <input type="checkbox" id="HotDog" name="hotdog" value=3000 class="food" />HotDog $3000</br>
         <input type="checkbox" id="CocaCcola" name="Coca-cola" value=2000 class="food" />Coca-cola $2000</br>
         <input type="checkbox" id="PapasFritas" name="PapasFritas" value=3000 class="food" />Papas Frites $3000 </br>
-        <span class="suma">La Suma de tus Pedido es: $</span> <span class="total"></span>
         <span class="error"></span>
+        <span class="total"></span>
       </div>
 
-      <div>
+      <div id="checkPymode">
         <span class="label">Selecciona tu medio de pago</span> </br>
         <input type="radio" name="pymode" class="pymode" value="MasterCard" />MasterCard </br>
         <input type="radio" name="pymode" class="pymode" value="ANXCard" />ANXCard </br>
         <input type="radio" name="pymode" class="pymode" value="VisaCard" />VisaCard </br>
+        <span class="error"></span>
       </div>
 
       <div>
@@ -66,6 +67,8 @@
           <option value="Barranquilla">Barranquilla</option>
           <option value="Cartagena">Cartagena</option>
         </select> </br>
+        <span class="error"></span>
+        <span class="card"></span>
       </div>
 
       <input type="button" class="button" value="Enviar"  />
