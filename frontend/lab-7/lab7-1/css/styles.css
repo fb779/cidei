@@ -5,8 +5,13 @@ body {
   body h1 {
     font-color: red; }
 
+span {
+  font-size: 2em; }
+
 .aplRojo {
+  background-color: green;
   color: red; }
 
 .aplVerde {
+  background-color: red;
   color: green; }

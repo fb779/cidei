@@ -61,9 +61,9 @@ $(document).ready(function(){
 			$('#openModal > div').empty();
 			$('#info').remove();
 
-			console.log("Si Existe Info");
+			//console.log("Si Existe Info");
 		}else{
-			console.log("No Existe Info");
+			//console.log("No Existe Info");
 		}
 
 		var validate = new Validate();
@@ -88,14 +88,12 @@ $(document).ready(function(){
 		if (len < 1 && data === ""){
 			$('input#username').removeClass('success');
 			$('input#username').addClass('error');
-			//$('#username').next().show();
 			$('.user-error').show();
 			$('.user-error').text("Indique su(s) Nombre(s) y Apellido(s)");
 			
 		}else{
 			$('input#username').removeClass('error');
 			$('input#username').addClass('success');
-			//$('#username').next().hide();
 			$('.user-error').hide();
 			localStorage.setItem('username', data);
 		}

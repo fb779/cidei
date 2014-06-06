@@ -10,10 +10,15 @@ h1 {
 	}
 }
 
+span {
+	font-size: 2em;
+}
 .aplRojo {
+	background-color: $color_verde;
 	color: $color_rojo;
 }
 
 .aplVerde {
+	background-color: $color_rojo;
 	color: $color_verde;
 }
