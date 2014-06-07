@@ -1,0 +1,21 @@
+// Variables para el style.css
+
+$page_width: 960px;
+$half_pages: $page_width / 2;
+$multiplied_pages: $page_width * 2;
+$sum_pages: $page_width + 200;
+$minus_pages: $page_width - 200;
+
+$color_font: #333;
+$color_white: white;
+$color_red: red;
+$color_green: green;
+$color_gray: #555;
+
+// variable de tamaño de fuente
+$font_h1: 6em;
+$font_h2: $font_h1 / 2;
+$font_h3: $font_h1 / 3;
+$font_h4: $font_h1 / 4;
+$font_h5: $font_h1 / 5;
+$font_h6: $font_h1 / 6;

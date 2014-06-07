@@ -1,0 +1,42 @@
+@import "_variables";
+
+body {
+	background: $color_white;
+	color: $color_font;
+	width: $page_width;
+
+}
+
+.color {
+
+	h1 { //saturacion del color, funcion de sass
+		color: saturate($color_font, 25%);
+		font-size: $font_h1;
+	}
+
+	h2 { //escala de grices a un color, funcion de sass
+		color: grayscale($color_red);
+		font-size: $font_h2;
+	}
+
+	h3 {
+		color: desaturate($color_green, 100%);
+		font-size: $font_h3;
+	}
+
+	h4 {
+		color: mix(desaturate($color_green, 100%), $color_red);
+		font-size: $font_h4;
+	}
+
+	h5 {
+		color: mix($color_white, #333);
+		font-size: $font_h5;
+	}
+
+	h6 {
+		background: #555;
+		color: lighten(#555, 63%);
+		font-size: $font_h6;
+	}
+}

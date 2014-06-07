@@ -1,0 +1,34 @@
+@mixin border_mix($rounderOne: 2px){
+	-webkit-border-radius : $rounderOne;
+	-khtml-border-radius : $rounderOne;
+	-moz-border-radius : $rounderOne;
+	-o-border-radius : $rounderOne;
+	border-radius : $rounderOne;
+}
+
+@mixin sombra($box1: 0, $box2: 0, $box3: 0, $box4: 0, $box5: 0, $box6: 0, $box7: 0, $box8: 0){
+	-webkit-box-shadow: $box1 $box2 $box3 $box4 rgba($box5, $box6, $box7, $box8);
+	-moz-box-shadow: $box1 $box2 $box3 $box4 rgba($box5, $box6, $box7, $box8);
+	box-shadow: $box1 $box2 $box3 $box4 rgba($box5, $box6, $box7, $box8);	
+}
+
+@mixin box_sizing(){
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@mixin transforma($valor: 0){
+	-webkit-transform: translateX($valor);
+	-moz-transform: translateX($valor);
+	-ms-transform: translateX($valor);
+	-o-transform: translateX($valor);
+	transform: translateX($valor);
+}
+
+@mixin transicion($time){
+	-webkit-transition: all $time;
+	-moz-transition: all $time;
+	-o-transition: all $time;
+	transition: all $time;
+}
