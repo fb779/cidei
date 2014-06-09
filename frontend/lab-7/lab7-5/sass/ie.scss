@@ -3,3 +3,18 @@
  * <!--[if IE]>
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
+
+@import "compass/reset";
+@import "compass";
+@import "_variables";
+
+
+// codigo para modificar
+
+* { @include box-sizing(border-box); }
+
+h1, h2, h3, h4, h5, h6 {
+	color: $varH;
+	font-family: Helvatica, Arial, sans-serif;
+	font-weight: bold;
+}
