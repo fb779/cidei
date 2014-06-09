@@ -3,10 +3,10 @@ $(document).ready(function(){
 	$('.total').hide();
 	$('.result').hide();
 	
-	//$('.email').attr('disabled', true);
-	//$('.password').attr('disabled', true);
-	//$('.confPass').attr('disabled', true);
-	//$('.food').attr('disabled', true);
+	$('.email').attr('disabled', true);
+	$('.password').attr('disabled', true);
+	$('.confPass').attr('disabled', true);
+	$('.food').attr('disabled', true);
 	$('.pymode').attr('disabled', true);
 	$('.city').attr('disabled', true);
 	
@@ -132,27 +132,6 @@ $(document).ready(function(){
 			
 		 }
 		//event.preventDefault();
-	});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	$('.submit').bind('click', function(event){
-		var data = $('.infobox').val();
-		event.preventDefault();
 	});
 
 	function valid_email(email){
