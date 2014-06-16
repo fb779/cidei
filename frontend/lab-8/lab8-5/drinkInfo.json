@@ -1,0 +1,6 @@
+[
+	{ "options":"Aguardiente", "optionValue" : "Aguardiente" },
+	{ "options":"Ron", "optionRValue" : "ron" },
+	{ "options":"Tequila", "optionVaequila" : "Tequila" },
+	{ "options":"Vodka", "optionValue" : "Vodka" }
+]

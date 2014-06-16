@@ -5,8 +5,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var routes = require('./routes/index');
-var users = require('./routes/users');
+//var routes = require('./routes/index');
+//var users = require('./routes/users');
 
 var app = express();
 
@@ -31,11 +31,11 @@ app.get('/hello', function(req, res){
     res.send('/GET hello World');
 });
 
-app.post('/hello', function(req, res){
-    res.send('Su Nombre es: ' + app.body.name);
+app.post('/name', function(req, res){
+    res.send('Su Nombre es: ' + req.body.name);
 });
 
-app.use('/users', users);
+//app.use('/users', users);
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {

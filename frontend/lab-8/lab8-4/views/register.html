@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <metada charset="utf-8">
+    <!-- llamado de css -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+    <!-- llamado libreria JQuery -->
+    <script type="text/javascript" src="javascripts/jquery_1.11.1.js"></script>
+        
+    <title>Laboratorio 6-8</title>
+  </head>
+
+  <body>
+    <h1>{{name}}</h1>
+    <form action="/ok" method="POST">
+    <fieldset>
+      <legend>Informacion General</legend>
+      <fieldset>
+        <div id="userinfo">  
+          <span class="label">Docuemtno de Identidad</span>
+          <input type="text" id="nid" name="nid"/>
+          <span class="nid-error"></span>
+        
+          <span class="label">Nombre(s) Apellido(s)</span>
+          <input type="text" id="username" name="username" />
+          <span class="user-error"></span>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div id="user">
+          <span class="label">Password *</span>
+          <input type="password" name="password" class="password" />
+          <span class="password-error"></span>  
+        
+          <span class="label">Verificar Password *</span>
+          <input type="password" name="conf-password" class="conf-password" />
+          <span class="conf-password-error"></span>
+        </div>
+
+        <div>
+          <span class="label">Ingresa tu email</span>
+          <input type="text" class="email" name="email"/>
+          <span class="email-error"></span>
+        </div>
+
+      </fieldset>
+
+      <fieldset>
+        <div id="checkboxes">
+          <span class="label">Selecciona tus Productos:</span><br />
+          <input type="checkbox" id="Pizza" name="pizza" value=5000 class="chkb" />Pizza $5000 <br />
+          <input type="checkbox" id="HotDog" name="hotdog" value=3000 class="chkb" />HotDog $3000<br />
+          <input type="checkbox" id="coke" name="Coca-cola" value=2000 class="chkb" />Coca-cola $2000<br />
+          <input type="checkbox" id="fries" name="PapasFritas" value=3000 class="chkb" />Papas Frites $3000 <br />
+          <span class="food-error"></span> 
+          <span class="food-total"></span>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div id="radios">
+          <span class="label">Selecciona tu medio de pago</span> <br />
+          <input type="radio" name="pymode" class="radiobtn" value="MasterCard" />Master Card <br />
+          <input type="radio" name="pymode" class="radiobtn" value="VisaCard" />Visa <br />
+          <span class="pay-error"></span>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div>
+          <span class="label">Seleccione Tu Ciudad</span>
+          <select id="city" class="infobox" name="city">
+            <option value="0" >Seleccione algun item</option>
+            <option value="Bogota">Bogota</option>
+            <option value="Medellin">Medellin</option>
+            <option value="Cali">Cali</option>
+            <option value="Barranquilla">Barranquilla</option>
+            <option value="Cartagena">Cartagena</option>
+          </select> <br />
+          <span class="city-error"></span>
+        </div>
+      </fieldset>
+      
+      <div id="buttons">
+        <button class="button" href="#">Enviar</button> 
+      </div>
+    </fieldset>
+    </form>
+
+    <div id="openModal" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close" >X</a>
+      </div>
+
+    </div>
+    <!-- llamado de JS -->
+    <script type="text/javascript" src="javascripts/lab8.4.js"></script>
+  </body>
+</html>
+
