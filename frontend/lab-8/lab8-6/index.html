@@ -2,17 +2,26 @@
 <html lang="es-ES">
   <head>
     <metada charset="utf-8">
+    <!-- llamado de css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
     <!-- llamado libreria JQuery -->
-    <script type="text/javascript" src="jquery_1.11.1.js"></script>
+    <script type="text/javascript" src="js/jquery_1.11.1.js"></script>
     
   </head>
 
   <body>
-    <h2>Informacion desde JSON</h2>
-    <input type="submit" id="submit" value="Consultar" />
-    <div id="message"> </div>
+    <div>
+        <b> usuarios </b>
+        <div id='users'></div>  
+    </div>
+    <div>
+      <input type="button" id="datasend" value="Enviar">
+      <input type="text" id="data" />
+      <div id='conversation'></div>
+    </div>
 
 
-    <script type="text/javascript" src="lab8-6.js"></script>
+    <script type="text/javascript" src="js/lab8-6.js"></script>
   </body>
 </html>
