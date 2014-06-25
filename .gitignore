@@ -87,3 +87,5 @@ node_modules
 ### Sass ###
 .sass-cache
 
+### Notas mias ###
+.fb
