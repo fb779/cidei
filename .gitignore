@@ -87,5 +87,13 @@ node_modules
 ### Sass ###
 .sass-cache
 
-### Notas mias ###
-.fb
+# Created by http://www.gitignore.io
+
+### VirtualEnv ###
+# Virtualenv
+# http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
+.Python
+[Bb]in
+[Ii]nclude
+[Ll]ib
+[Ss]cripts
