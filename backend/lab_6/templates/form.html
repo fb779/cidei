@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> {{title}} </title>
+	<head>
+	<body>
+		<p> <strong> {{title}} </strong> </p>
+		<div>
+			<form action="." method="POST">
+				{% csrf_token %}
+				<!--Opciones de creacion del formulario:
+						as_table	-> como una tabla
+						as_ul		-> como un lista
+						as_p		-> como un parrafo 
+				 -->
+				{{form.as_p}}
+				<input type="submit" value="Enviar" />
+			</form>
+
+
+		</div>
+
+	</body>
+</html>
